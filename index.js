@@ -1,6 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
+
+// the order of your require statements matter
+require('./models/User');
 require('./services/passport');
 
 // connect the remote DB to server
